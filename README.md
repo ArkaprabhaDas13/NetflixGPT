@@ -1,7 +1,14 @@
 # NetflixGPT
 
+Live link : https://netflixgpt-36cad.web.app
+
 - create react app
 - tailwind
+- Header
+- React Routing
+- Login Form/ Signup Form
+- Form Validation
+- useRef Hook
 
 # Features
 
@@ -20,3 +27,11 @@
 - Netflix GPT
     - Search Bar
     - Movie Suggestions 
+    
+
+- Firebase commands
+    - npm install -g firebase-tools
+    - firebase login
+    - firebase init
+    - npm run build
+    - firebase deploy
