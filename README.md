@@ -9,6 +9,9 @@ Live link : https://netflixgpt-36cad.web.app
 - Login Form/ Signup Form
 - Form Validation
 - useRef Hook
+- Firebase setup
+- Deploying our app
+- Create a Signup Account
 
 # Features
 
