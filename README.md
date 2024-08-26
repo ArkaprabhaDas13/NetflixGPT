@@ -12,6 +12,19 @@ Live link : https://netflixgpt-36cad.web.app
 - Firebase setup
 - Deploying our app
 - Create a Signup Account
+- Imoplemented Sign Out
+- Register in TMDB for API
+- Implemented API calls
+- GET the data 
+- Custom Hook
+- Update Store with movies Data
+- Planning for UI
+- Trailer video fetch using custom hook
+- Updated Store
+- Embedded Video
+- Designed UI
+
+
 
 # Features
 

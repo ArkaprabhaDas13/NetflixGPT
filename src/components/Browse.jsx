@@ -1,15 +1,36 @@
 import React from 'react'
 import Header from './Header'
+import useNowPlayingHook from '../hooks/useNowPlayingMovies'
+import MainContainer from './MainContainer'
+import SecondaryContainer from './SecondaryContainer'
 
 const Browse = () => {
-  return (
 
+  useNowPlayingHook();          //  custom HOOK
+
+  return (
     <>
       <Header/>
-      <h1>Browse</h1>
+      <MainContainer/>
+      <SecondaryContainer/>
+
+    {/* 
+
+        Main Container
+          - Video BG
+          - Video Title
+        Secondary Container
+          - MovieList * n
+          - Cards * n
+
+    */}
+
     </>
     
   )
 }
 
 export default Browse
+
+
+

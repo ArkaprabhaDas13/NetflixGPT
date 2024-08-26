@@ -24,23 +24,9 @@ const Body = () => {
         }
     ])
 
-    // We are using this API given to us by Firebase where we do not have to repeatedly write a dispatch function for Signin / Signup / Removing User
+    
 
-    useEffect(()=>{
 
-      onAuthStateChanged(auth, (user)=>{
-        if(user)
-        {
-          const {uid, email, displayName, photoUrl} = user;
-          dispatch(addUser({uid:uid, email:email, displayName:displayName, photoUrl:photoUrl}))      
-        }  
-        else
-        {
-          dispatch(removeUser())
-        }
-      })
-
-    }, [])
 
 
   //// RETURN Statement ////
