@@ -7,6 +7,7 @@ import {auth} from '../utils/firebase'
 import { updateProfile } from 'firebase/auth';
 import {useDispatch} from 'react-redux'
 import { addUser } from '../utils/userSlice';
+import { bgImage } from '../utils/constants';
 
 const Login = () => {
 
@@ -98,7 +99,7 @@ const Login = () => {
       <Header/>
       
       <div className='absolute '>
-        <img className='w-[100vw] h-[100vh] lg:w-[100]' src="https://assets.nflxext.com/ffe/siteui/vlv3/b2c3e95b-b7b5-4bb7-a883-f4bfc7472fb7/19fc1a4c-82db-4481-ad08-3a1dffbb8c39/IN-en-20240805-POP_SIGNUP_TWO_WEEKS-perspective_WEB_24a485f6-1820-42be-9b60-1b066f1eb869_medium.jpg" alt="" />
+        <img className='w-[100vw] h-[100vh] lg:w-[100]' src={bgImage} alt="" />
       </div>
 
       <form onSubmit={(e)=>e.preventDefault()} className='relative flex flex-col p-12 bg-black bg-opacity-70  m-auto justify-center border border-gray-700 rounded-xl w-[90%] lg:w-[40%] md:w-[40%] sm:w-[40%]' action="">

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import VideoTitle from './VideoTitle'
 import VideoBackground from './VideoBackground'
-import { reauthenticateWithCredential } from 'firebase/auth'
 
 const MainContainer = () => {
 
@@ -12,14 +11,14 @@ const MainContainer = () => {
         return;
     }
 
-    const mainMovie = movies[0];
-    console.log(mainMovie)
+    const mainMovie = movies[2];
+    console.log("Background Mvoie = ", mainMovie)
 
     const {original_title, overview, id} = mainMovie
 
     
     return (
-        <div className=''>
+        <div className='bg-black'>
 
 
             <VideoTitle title={original_title} overview={overview}/>
