@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import useNowPlayingHook from '../hooks/useNowPlayingMovies'
+import useNowPlayingMovies from '../hooks/useNowPlayingMovies'
 import MainContainer from './MainContainer'
 import SecondaryContainer from './SecondaryContainer'
 import usePopular from '../hooks/usePopular'
@@ -13,7 +13,7 @@ const Browse = () => {
   const gptToggle = useSelector((store)=>store.gpt?.showGptSearch)
   console.log("GPT Logic -> ", gptToggle)
 
-  useNowPlayingHook();          //  custom HOOK
+  useNowPlayingMovies();          //  custom HOOK
   usePopular();
   useUpcoming();
 
@@ -27,7 +27,7 @@ const Browse = () => {
         {
         gptToggle ? <GptSearch/> : <div><MainContainer/><SecondaryContainer/></div>
         }
-
+        
         
       </div>
 

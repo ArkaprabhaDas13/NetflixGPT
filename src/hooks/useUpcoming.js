@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch , useSelector } from 'react-redux'
 import { addUpcomingMovies } from '../utils/movieSlice';
 import { API_OPTIONS } from '../utils/constants';
 
 const useUpcoming = () => {
 
     const dispatch = useDispatch();
+
+    const upcomingMovies = useSelector((store)=>store.movies.upcomingMovies)
 
     const getUpcomingMovies = async()=>{
         
@@ -17,7 +19,7 @@ const useUpcoming = () => {
 
     useEffect(()=>{
 
-        getUpcomingMovies();
+        !upcomingMovies && getUpcomingMovies();
 
     }, [])
 

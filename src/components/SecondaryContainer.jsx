@@ -10,6 +10,10 @@ const SecondaryContainer = () => {
 
   const upcomingMovies = useSelector((store) => store.movies?.upcomingMovies)
 
+  // console.log("Movies = ", movies)
+  // console.log("Popular Movies = ", popularMovies)
+  // console.log("Upcoming Movies = ", upcomingMovies)
+
 
   if(movies == null ||  popularMovies == null || upcomingMovies == null)
     return;

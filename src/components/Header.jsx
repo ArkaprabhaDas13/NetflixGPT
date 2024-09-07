@@ -76,7 +76,7 @@ const Header = () => {
   }, [])
 
   return (
-    <div className='absolute w-screen h-36 bg-gradient-to-b from-black to-transparent p-4 z-10 flex justify-between'>
+    <div className='fixed w-screen h-36 bg-gradient-to-b from-black to-transparent p-4 z-10 flex justify-between'>
         <div className=''>
             <img src={LOGO} alt="Logo" className='w-48 fixed p-2 m-2'/>
         </div>

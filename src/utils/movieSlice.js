@@ -7,13 +7,14 @@ const movieSlice = createSlice({
         nowPlayingMovies : null,
         polularMovies : null,
         upcomingMovies : null,
-        trailerVideo : null
+        trailerVideo : null,
+        nowWatching : null,
+        nowWatchingKey: null
     },
 
     reducers: {
         addNowPlayingMovies: (state, action)=>{
             state.nowPlayingMovies = action.payload;
-            // console.log("Redux movie store =", state.nowPlayingMovies)
         },
 
         addPopularMovies: (state, action)=>{
@@ -26,10 +27,17 @@ const movieSlice = createSlice({
 
         addTrailerVideo: (state, action)=>{
             state.trailerVideo = action.payload
-        }
+        },
 
+        addNowWatching: (state, action)=>{
+            state.nowWatching = action.payload
+        },
+
+        addNowWatchingKey: (state, action)=>{
+            state.nowWatchingKey = action.payload
+        }
     }
 })
 
 export default movieSlice.reducer;
-export const {addNowPlayingMovies, addTrailerVideo, addPopularMovies, addUpcomingMovies} = movieSlice.actions;
+export const {addNowPlayingMovies, addTrailerVideo, addPopularMovies, addUpcomingMovies, addNowWatching, addNowWatchingKey} = movieSlice.actions;

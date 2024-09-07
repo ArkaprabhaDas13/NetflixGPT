@@ -1,19 +1,19 @@
 import React from 'react'
 import SearchBarGpt from './SearchBarGpt'
-import MovieSuggestionsGpt from './MovieSuggestionsGpt'
 import { bgImage } from '../utils/constants'
+import MovieSuggestionsGpt from './MovieSuggestionsGpt'
 
 const GptSearch = () => {
   return (
-    <div className='flex '>
+    <div className='-z-10'>
       
-      <div className='absolute w-screen h-screen'>
-      <img src={bgImage} alt="" />      
+      <div className='fixed w-screen h-screen'>
+        <img src={bgImage} alt=""/>      
       </div>
 
       <SearchBarGpt/>
 
-      <MovieSuggestionsGpt/>
+      {/* <MovieSuggestionsGpt></MovieSuggestionsGpt> */}
       
     </div>
   )

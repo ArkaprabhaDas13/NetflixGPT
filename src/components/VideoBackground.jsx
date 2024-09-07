@@ -8,6 +8,8 @@ const VideoBackground = ({movieId}) => {
 
     const trailerVideo = useSelector(store => store.movies?.trailerVideo)      // fetching movie form Redux store   
 
+    console.log("TRAILER VIDEO : ", trailerVideo)
+
     useMovieTrailer(movieId);       // adding all the fetched movies to Redux store
 
   return (
